@@ -1,4 +1,11 @@
+html,
 body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
   color: #777;
   font: 1em/1.33 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -7,6 +14,10 @@ h1,
 h2,
 h3 {
   font-family: 'Georgia', 'Times New Roman', Times, serif;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 header {
@@ -45,7 +56,7 @@ nav {
 }
 
 .site-navigation li {
-  border-left: 1px solid #f3f3f3;
+  border-left: 1px solid #ccc;
   display: inline-block;
   padding: 0 .5em 0 .67em;
 }
@@ -61,4 +72,9 @@ nav {
 
 footer {
   background-color: #666;
+  border-top: 5px solid #49aaa5;
+  color: #ccc;
+  flex-shrink: 0;
+  text-align: center;
+  padding: 1em 0;
 }
