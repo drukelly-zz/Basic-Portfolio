@@ -1,13 +1,21 @@
+:root {
+  --gray: #777;
+  --light-gray: #ccc;
+  --teal: #49aaa5;
+
+}
+
 html,
 body {
   height: 100%;
 }
 
 body {
+  background: url('../../assets/images/ignasi_pattern_s.png') repeat;
   display: flex;
   flex-direction: column;
-  color: #777;
-  font: 1em/1.33 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: var(--gray);
+  font: 1em/1.67 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 h1,
@@ -20,9 +28,11 @@ h3 {
   flex: 1 0 auto;
 }
 
+/* Header */
+
 header {
   background-color: #fff;
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid var(--light-gray);
 }
 
 header > div {
@@ -38,12 +48,14 @@ header h1 {
 }
 
 .site-link {
-  background-color: #49aaa5;
+  background-color: var(--teal);
   color: #fff;
   display: block;
   padding: .5em 1em;
   text-decoration: none;
 }
+
+/* Navigation */
 
 nav {
   margin-left: auto;
@@ -56,7 +68,7 @@ nav {
 }
 
 .site-navigation li {
-  border-left: 1px solid #ccc;
+  border-left: 1px solid var(--light-gray);
   display: inline-block;
   padding: 0 .5em 0 .67em;
 }
@@ -70,11 +82,46 @@ nav {
   text-decoration: none;
 }
 
+/* Site Content */
+
+.main-content {
+  background-color: #fff;
+  border: 1px solid var(--light-gray);
+  margin: 2em auto 0;
+  width: 960px;
+}
+
+.content-container {
+  padding: .5em 2em 1em;
+}
+
+.main-content h2 {
+  border-bottom: 2px solid var(--light-gray);
+  color: var(--teal);
+  margin-bottom: 1.25em;
+  padding-bottom: .5em;
+}
+
+/* Figure */
+figure {
+  float: left;
+  margin: 0 2em 1em 0;
+}
+
+/* Footer  */
+
 footer {
-  background-color: #666;
-  border-top: 5px solid #49aaa5;
-  color: #ccc;
+  background-color: var(--gray);
+  border-top: 5px solid var(--teal);
+  color: var(--light-gray);
   flex-shrink: 0;
   text-align: center;
   padding: 1em 0;
+}
+
+/* Classes */
+.clearfix {
+  clear: both;
+  display: block;
+  height: 0;
 }
