@@ -135,12 +135,43 @@ figure {
   margin: 0 2em 1em 0;
 }
 
+/* Contact */
+form {
+  margin-bottom: 1em;
+}
+
+fieldset {
+  border: none;
+  margin: 0 0 .75em;
+  padding: 0;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: .25em .5em;
+  width: 98%;
+}
+
+textarea {
+  border: 1px solid var(--light-gray);
+}
+
+button {
+  background-color: var(--teal);
+  border: none;
+  color: #fff;
+  padding: .5em 2em;
+  outline: none;
+}
+
 /* Footer  */
 footer {
   background-color: var(--gray);
   border-top: 5px solid var(--teal);
   color: var(--light-gray);
   flex-shrink: 0;
+  padding: 1em 0;
   text-align: center;
 }
 
