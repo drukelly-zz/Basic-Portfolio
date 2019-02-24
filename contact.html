@@ -10,25 +10,27 @@
 <body>
   <div class="content">
     <header>
-      <h1><a href="index.html">John Kelly</a></h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div>
+        <h1><a href="index.html" class="site-link">John Kelly</a></h1>
+        <nav>
+          <ul class="site-navigation">
+            <li><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <section>
       <h2>Contact</h2>
-      <form action="" method="POST">
+      <form action="/" method="POST">
         <fieldset>
           <legend>Name</legend>
-          <label for="fullName"><input type="text" name="fullName" placeholder="John/Jane Doe" required></label>
+          <label for="fullName"><input type="text" id="fullName" name="fullName" placeholder="John/Jane Doe" required></label>
         </fieldset>
         <fieldset>
           <legend>Email</legend>
-          <label for="emailAddress"><input type="email" name="emailAddress" placeholder="example@domain.com" required></label>
+          <label for="emailAddress"><input type="email" id="emailAddress" name="emailAddress" placeholder="example@domain.com" required></label>
         </fieldset>
         <fieldset>
           <legend>Message</legend>
