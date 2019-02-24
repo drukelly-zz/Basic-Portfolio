@@ -1,3 +1,4 @@
+/* Color Variables */
 :root {
   --gray: #777;
   --light-gray: #ccc;
@@ -5,6 +6,7 @@
 
 }
 
+/* HTML Basic Declarations */
 html,
 body {
   height: 100%;
@@ -29,7 +31,6 @@ h3 {
 }
 
 /* Header */
-
 header {
   background-color: #fff;
   border-bottom: 2px solid var(--light-gray);
@@ -56,7 +57,6 @@ header h1 {
 }
 
 /* Navigation */
-
 nav {
   margin-left: auto;
 }
@@ -83,7 +83,6 @@ nav {
 }
 
 /* Site Content */
-
 .main-content {
   background-color: #fff;
   border: 1px solid var(--light-gray);
@@ -102,6 +101,34 @@ nav {
   padding-bottom: .5em;
 }
 
+/* Portfolio */
+.portfolio-items {
+}
+
+.portfolio-items a {
+  display: block;
+  float: left;
+  margin: 0 2em 2em 0;
+  position: relative;
+  text-decoration: none;
+  width: 30%;
+}
+
+.portfolio-items img {
+  width: 100%;
+}
+
+.portfolio-items h3 {
+  background-color: var(--teal);
+  bottom: 20px;
+  color: #fff;
+  font-weight: normal;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
 /* Figure */
 figure {
   float: left;
@@ -109,14 +136,12 @@ figure {
 }
 
 /* Footer  */
-
 footer {
   background-color: var(--gray);
   border-top: 5px solid var(--teal);
   color: var(--light-gray);
   flex-shrink: 0;
   text-align: center;
-  padding: 1em 0;
 }
 
 /* Classes */
