@@ -2,8 +2,8 @@
 :root {
   --gray: #ccc;
   --light-gray: #ddd;
-  --teal: #49aaa5;
   --slate: #777;
+  --teal: #49aaa5;
   --white: #fff;
 }
 
@@ -15,9 +15,9 @@ body {
 
 body {
   background: url('../../assets/images/ignasi_pattern_s.png') repeat;
+  color: var(--slate);
   display: flex;
   flex-direction: column;
-  color: var(--slate);
   font: 1em/1.67 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
@@ -103,9 +103,6 @@ nav {
 }
 
 /* Portfolio */
-.portfolio-items {
-}
-
 .portfolio-items a {
   display: block;
   float: left;
@@ -162,8 +159,8 @@ button {
   background-color: var(--teal);
   border: none;
   color: var(--white);
-  padding: .5em 2em;
   outline: none;
+  padding: .5em 2em;
 }
 
 /* Footer  */
